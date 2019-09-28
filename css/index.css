@@ -170,6 +170,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes opacity {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navigation {
   display: flex;
   padding-bottom: 20px;
@@ -204,6 +212,7 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+  animation: opacity 8s;
 }
 @media (max-width: 500px) {
   .home .intro img {
