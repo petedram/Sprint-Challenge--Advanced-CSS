@@ -141,7 +141,6 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-color: red;
 }
 html,
 body {
@@ -204,8 +203,12 @@ footer {
   align-items: center;
 }
 .home .intro img {
-  width: 100vw;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100vw;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -218,11 +221,30 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images img .sky {
+    display: none;
+  }
+  .home .space-images img .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;

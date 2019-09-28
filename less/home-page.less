@@ -4,8 +4,11 @@
 
   .intro {
     img {
-      width:100vw;
       border-radius: 5px;
+
+      @media @phone {
+        width:100vw;
+      }
     }
 
     h2 {
@@ -23,11 +26,36 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+        .sky {
+          display:none;
+        }
+
+        .launch {
+          display:none;
+        }
+
+      }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+      width:100%;
+
+        .sky {
+          display:none;
+        }
+
+        .launch {
+          display:none;
+        }
+
+      }
+
     }
   }
 
