@@ -141,6 +141,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: red;
 }
 html,
 body {
@@ -203,6 +204,7 @@ footer {
   align-items: center;
 }
 .home .intro img {
+  width: 100vw;
   border-radius: 5px;
 }
 .home .intro h2 {
